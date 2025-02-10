@@ -51,3 +51,11 @@ let inventory = [5, 0, 12, 8, 0]; // created an array
 let availableProducts = inventory.filter(quantity => quantity > 0); // removed objects in array which were 0 quantity
 
 console.log("Products Available:", availableProducts); // logging of available products in console
+
+// Task 6 Reduce Method
+
+let sales = [500, 300, 200, 400]; // creating an array of sales
+
+let totalrevenue = sales.reduce((acc, sale) => acc + sale, 0); // adding up all sales in array
+
+console.log("Total Revenue:", totalrevenue); // logging the total revenue into the console
